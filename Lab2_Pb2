@@ -1,0 +1,4 @@
+nth_element(A,[H|T],1).
+nth_element(A,[H|T],N):-
+    nth_element(A,[H|T],N1),
+    N is N1+1.
