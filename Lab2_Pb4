@@ -1,0 +1,6 @@
+true_function(X , [H1|T1] ,[H2|T2] ).
+true_function(X , [H|T] ,[A|B]) :- add(X,H,A),true_function(X,T,B).
+
+add(X,H,K):- 
+  K is H+X.
+  
